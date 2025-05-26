@@ -78,22 +78,78 @@ main p {
 /* why choose royal */
 
 .why-royal {
-    position: relative;
-    left: 330px;
-    margin-top: 4%;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: 200;
+
+  margin-top: 40px;
+  padding-left: 260px;   /* push content right inside the container */
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 700px;     /* limit max width for readability */
+  color: #1a1a1a;
+  padding-right: -10;
+  margin-left: 3.5%;
 }
 .why-royal li {
     line-height: 2.2;
 }
 
+/* Adding media query for the Home page */
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
 
+  header p {
+    font-size: 1rem;
+  }
 
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  nav a {
+    padding: 8px 12px;
+  }
 
+  main {
+    padding: 15px;
+  }
 
+  .why-royal {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 30px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 /* Footer */
